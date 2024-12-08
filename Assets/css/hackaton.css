@@ -32,6 +32,13 @@
 }
 
 #Future{
+    width: 100%;
+    position: sticky;
+    padding: 2px;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: white;
     .container{
         width: 90%;
         display: flex;
