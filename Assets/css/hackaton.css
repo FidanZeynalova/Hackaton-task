@@ -79,7 +79,6 @@
         }
     }
 }
-
 #Home{
     position: relative;
    .home-image{
@@ -275,5 +274,19 @@
                 justify-content: center;
             }
         }
+    }
+}
+#fix-icon{
+    background-color: #36348e;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all .4s ease;
+    &:hover{
+        opacity: .9;
     }
 }
