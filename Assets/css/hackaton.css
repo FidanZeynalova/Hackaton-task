@@ -1,0 +1,272 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+#header{
+    background-color: #36348e;
+    .container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px auto;
+        color: white;
+        padding: 10px 0;
+        .email-phone{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        span{
+            display: flex;
+            gap: 5px;
+        }
+    }
+}
+
+#Future{
+    .container{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px auto;
+        .lists{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                li{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 18px;
+                    a{
+                        color: black;
+                    }
+                }
+            }
+        }
+        .input-icon{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .input{
+                input{
+                    border: 1px solid #36348e;
+                    padding: 5px;
+                    font-size: 18px;
+                }
+            }
+            .icon{
+                color: #36348e;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+#Home{
+    position: relative;
+   .home-image{
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(.3);
+    }
+   } 
+   .content{
+    position: absolute;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    top: 5%;
+    left: 0;
+    span{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        gap: 10px;
+        font-weight: bold;
+        color: #09a24f;
+    }
+    h1{
+        font-size: 60px;
+        color: white;
+        width: 50%;
+    }
+    p{
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        width: 60%;
+    }
+    .buttons{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        #View{
+            background-color: #09a24f;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 18px;
+            padding: 15px;
+            transition: all .4s ease;
+            .fa-arrow-right{
+                transform: rotate(-20deg);
+                transition: all .4s ease;
+            }
+            &:hover{
+                background-color: #110c2d;
+                .fa-arrow-right{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        #video{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: white;
+            font-size: 20px;
+        }
+    }
+   }
+
+   .arrows{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    z-index: 2;
+        button{
+            border: 1px solid white;
+            color: white;
+            padding: 20px;
+            border-radius: 50%;
+            background-color: transparent;
+            font-size: 18px;
+            transition: all .4s ease;
+            &:hover{
+                background-color: #09a24f;
+            }
+    }
+   }
+   .card-wrappers{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .card{
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        padding: 30px;
+        color: white;
+        align-items: center;
+        transition: all .4s ease;
+        &:nth-child(2n){
+            background-color: #09a24f;
+        }
+        &:nth-child(2n+1){
+            background-color: #36348e;
+        }
+        .icon{
+            font-size: 40px;
+        }
+        h3{
+            font-size: 25px;
+        }
+        &:hover{
+            background-color: #110c2d;
+        }
+    }
+   }
+}
+#Admin-Panel{
+    margin: 20px 0;
+    .container{
+        position: relative;
+        width: 90%;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        h1{
+            font-size: 60px;
+        }
+        .image{
+            width: 100%;
+            position: relative;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+        #register-form{
+            background-color: white;
+            padding: 40px;
+            width: 80%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            gap: 20px;
+            top: 50%;
+            .inputs{
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                justify-content: space-around;
+                input{
+                    width: 100%;
+                    padding: 10px;
+                    border: 1px solid rgba(0, 0, 0, 0.398);
+                    font-size: 18px;
+                }
+                .left-inputs,.input-right{
+                    width: 100%;
+                    display: flex;
+                    gap: 20px;
+                    flex-direction: column;
+                }
+            }
+            input,textarea{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.398);
+            }
+            button{
+                cursor: pointer;
+                background-color: #36348e;
+                color: white;
+                padding: 15px;
+                font-size: 18px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+            }
+        }
+    }
+}
