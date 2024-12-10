@@ -354,9 +354,14 @@
   .container {
     width: 90%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0px auto;
+    h1{
+      font-size: 50px;
+      margin: 30px auto;
+    }
     .card-wrappers {
       display: flex;
       align-items: center;
@@ -373,6 +378,10 @@
         &:nth-child(2n + 1) {
           background-color: #09a24f;
           color: white;
+          transition: all .4s ease;
+          &:hover{
+            background-color: #110c2d;
+          }
         }
         &:nth-child(2n) {
           background-color: #36348e;
@@ -403,6 +412,7 @@
           align-items: center;
           margin: 0px auto;
           gap: 8px;
+          padding: 2px 0;
           position: relative;
           font-size: 18px;
           color: white;
@@ -431,7 +441,7 @@
             button{
                 border: 1px solid rgba(255, 255, 255, 0.349);
                 color: white;
-                padding: 17px;
+                padding: 17.7px 0 17.8px 0;
                 font-size: 23px;
                 display: flex;
                 gap: 8px;
@@ -444,6 +454,138 @@
             }
         }
         
+      }
+    }
+  }
+}
+#finansial-aid{
+  margin: 40px auto;
+  position: relative;
+  .image{
+    width: 100%;
+    filter: brightness(.3);
+    img{
+      width: 100%;
+    }
+  }
+  .content{
+    width: 55%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    top: 25%;
+    left: 25%;
+    h1{
+      font-size: 55px;
+    }
+    span{
+      text-align: center;
+      font-size: 19px;
+    }
+    button{
+      width: 30%;
+      border: 1px solid rgba(255, 255, 255, 0.349);
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      align-items: center;
+      transition: all .4s ease;
+      .fa-arrow-right{
+      transition: all .4s ease;
+      transform: rotate(-40deg);
+      }
+      &:hover{
+          background-color: #09a24f;
+          .fa-arrow-right{
+            transform: rotate(0deg);
+          }
+      }
+  }
+  }
+}
+#studyHub-university{
+  position: relative;
+  .container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    .text-head{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h1{
+        width: 40%;
+        font-size: 50px;
+      }
+      span{
+        font-size: 19px;
+        width: 50%;
+        color: gray;
+      }
+    }
+    .card-wrappers{
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      justify-content: center;
+      gap: 25px;
+      .card{
+        position: relative;
+        .content{
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #110c2d;
+          padding: 20px;
+          color: white;
+          display: flex;
+          flex-direction: column;
+          /* align-items: center; */
+          gap: 30px;
+          .head{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 45px;
+          }
+          .main{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            h3{
+              font-size: 24px;
+            }
+            span{
+              font-size: 18px;
+              opacity: .7;
+            }
+          }
+        }
+        .image{
+          opacity: 0;
+          position: relative;
+          width: 100%;
+          transition: all .6s ease;
+          img{
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        &:hover .image{
+          opacity: 1;
+        }
       }
     }
   }
